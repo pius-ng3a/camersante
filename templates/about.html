@@ -1,0 +1,78 @@
+{% extends "base_layout.html" %}
+{% load static  i18n  %}
+
+{% block content %}
+    <main>
+        <!--? Slider Area Start-->
+        <div class="slider-area slider-area2">
+            <div class="slider-active dot-style">
+                <!-- Slider Single -->
+                <div class="single-slider  d-flex align-items-center slider-height2">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-7 col-lg-8 col-md-10 ">
+                             <div class="hero-wrapper">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInUp" data-delay=".3s"> {% trans 'À Propos' %}</h1>
+                                    <p data-animation="fadeInUp" data-delay=".6s">{% trans 'Nous offrons un placement fiable aux agents de santé dans des hôpitaux réputés au Canada.' %}<br> {% trans 'Nos services sont superbes!!' %}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!-- Slider Area End -->
+    <!--? Team Area Start-->
+    {% include "includes/teams.html" %}
+    <!--? Team End-->
+    <!-- Services End-->
+    <!--? About-2 Area Start -->
+    <div class="about-area2 section-padding40">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-12">
+                    <!-- about-img -->
+                    <div class="about-img ">
+                        <img src="{% static 'img/gallery/about.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="about-caption mb-50">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle mb-35">
+                            <h2> {% trans "Le placement du personnel de santé est ce que nous faisons." %}</h2>
+                        </div>
+                        <p class="pera-top mb-40">{% trans "Nous travaillons avec des partenaires pour fournir un emploi de qualité à nos clients." %}</p>
+                        <p class="pera-bottom mb-30">{% trans "Nos services sont exceptionnels avec des stages allant de quelques jours à quelques semaines. Nous comptons beaucoup sur votre collaboration pour un processus rapide. Nos conditions sont très flexibles et faciles à respecter. Nous serions heureux de vous accueillir bientôt!"
+                        </p>
+                        <div class="icon-about">
+                         <img src="{% static 'img/icon/about1.svg' %} " alt="" class=" mr-20">
+                         <img src="{% static 'img/icon/about2.svg' %}" alt="">
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!--? Testimonial Area Start -->
+ {% include "includes/testimonials.html" %}
+<!--? Testimonial Area End -->
+<!--? video_start -->
+<div class="container">
+    <div class="video-area section-bg2 d-flex align-items-center"  data-background="{% static 'img/gallery/video-bg.png' %}">
+        <div class="video-wrap position-relative">
+            <div class="video-icon" >
+                <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=9FrFKmMHlFM"><i class="fas fa-play"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- video_end -->      
+ 
+<!--? About Law Start-->
+{% include "includes/about_law.html" %}
+<!-- About Law End-->
+</main>
+{% endblock%}

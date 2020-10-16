@@ -1,0 +1,139 @@
+{% extends "base_layout.html" %}
+{% load static  i18n  %}
+
+{% block content %}
+    <main >
+        <!--? Slider Area Start-->
+        <div class="slider-area" style="height: 500px;">
+            <div class="slider-active dot-style" style="height: 10%;">
+                <!-- Slider Single -->
+                <div class="single-slider d-flex align-items-center slider-height">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-7 col-lg-8 col-md-10 ">
+                                
+                             <div class="hero-wrapper">
+                                <!-- Video icon -->
+                                <div class="video-icon">
+                                    <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=9FrFKmMHlFM" data-animation="bounceIn" data-delay=".4s">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInUp" data-delay=".3s">{% trans 'Bonnes conditions de travail' %} </h1>
+                                    <p data-animation="fadeInUp" data-delay=".6s">{% trans 'Excellent personnel pour faciliter votre placement.'%}<br> </p>
+                                    <!--a href="/services" class="btn" data-animation="fadeInLeft" data-delay=".3s">{% trans 'En Savior Plus'%}</a-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <!-- Slider Single -->
+            <div class="single-slider d-flex align-items-center slider-height">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-7 col-lg-8 col-md-10 ">
+                         <div class="hero-wrapper">
+                            <!-- Video icon -->
+                            <div class="video-icon">
+                                <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=9FrFKmMHlFM" data-animation="bounceIn" data-delay=".4s">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="hero__caption">
+                                <h1 data-animation="fadeInUp" data-delay=".3s"> {% trans 'Horaires flexibles' %} </h1>
+                                <p data-animation="fadeInUp" data-delay=".6s">{% trans 'Gérez votre emploi du temps et faites de votre mieux avec plaisir.'%}<br> </p>
+                                <!--a href="/services" class="btn" data-animation="fadeInLeft" data-delay=".3s">{% trans 'En Savior Plus' %}</a-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>  
+            <div class="single-slider d-flex align-items-center slider-height">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-7 col-lg-8 col-md-10 ">
+                         <div class="hero-wrapper">
+                            <!-- Video icon -->
+                            <div class="video-icon">
+                                <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=9FrFKmMHlFM" data-animation="bounceIn" data-delay=".4s">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="hero__caption">
+                                <h1 data-animation="fadeInUp" data-delay=".3s"> {% trans "Nos clients sont une priorité" %}</h1>
+                                <p data-animation="fadeInUp" data-delay=".6s">{% trans "Vous travaillez mieux lorsque vous vous sentez aimé. Rejoignez-nous et travaillez dans un bon environnement." %} <br> </p>
+                                <!-- a href="/services" class="btn" data-animation="fadeInLeft" data-delay=".3s">{% trans "En Savior Plus" %}</a -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+</div>
+<!-- Slider Area End -->
+<!--? About-2 Area Start -->
+
+<div class="about-area2 section-padding40">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12">
+                <!-- about-img -->
+                <div class="about-img ">
+                    <img src="{% static 'img/gallery/about.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="about-caption">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle mb-35">
+                        <h2 style="color: green;"> {% trans "Notre distinction des autres" %} 
+                         </h2>
+                    </div>
+                    
+                    <p class="pera-top mb-40">&rarr;{% trans "Des Bonus" %} </p>
+                    <p class="pera-top mb-40">&rarr;{% trans "Des Bons Salaires" %} </p>
+                    <p class="pera-top mb-40">&rarr;{% trans "Coaching d'expert" %} </p>
+                    <p class="pera-top mb-40">&rarr; {% trans "Horaires de travail flexibles"%}</p>
+                    <p class="pera-top mb-40">&rarr;{% trans "Conditions de travail favorables" %} </p>
+                    <p class="pera-top mb-40">&rarr;{% trans "Travailleurs à temps partiel et à temps plein" %} </p>
+                   <!-- class="pera-bottom mb-40"--> 
+                    
+                    
+                    <div class="icon-about">
+                     <img src="{% static 'img/icon/about1.svg" alt="" class=" mr-20">
+                     <img src="{% static 'img/icon/about2.svg" alt="">
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</div>
+<!-- About-2 Area End -->
+<!--? Blog Area Start -->
+{% include "includes/teams.html" %}
+<!-- Blog Area End -->
+{% include "includes/services_partial.html" %}
+<!--? Testimonial Area Start -->
+{% include "includes/testimonials.html" %}  
+<!--? Testimonial Area End -->
+<!--? video_start -->
+<div class="container">
+    <div class="video-area section-bg2 d-flex align-items-center"  data-background="{% static 'img/gallery/video-bg.png' %}">
+        <div class="video-wrap position-relative">
+            <div class="video-icon" >
+                <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=9FrFKmMHlFM"><i class="fas fa-play"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- video_end -->      
+
+<!--? About Law Start-->
+{% include "includes/about_law.html" %}
+<!-- About Law End-->
+</main>
+{% endblock%}
