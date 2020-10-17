@@ -34,6 +34,7 @@ if os.path.isfile(dotenv_file):
 SECRET_KEY = 'gd3+h-59^_jh$bln&8e6nh81=tt+l)^*n%(f=3l(o-aoy)mw2m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+#https://sheltered-falls-91447.herokuapp.com/ 
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
