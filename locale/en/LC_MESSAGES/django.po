@@ -4,11 +4,11 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 #, fuzzy
-msgid ""
-msgstr ""
+ msgid ""
+ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-16 16:34+0100\n"
+"POT-Creation-Date: 2020-10-17 09:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,27 +16,55 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\camersante\settings.py:68 .\camersante\settings_back.py:68
+#: .\camersante\settings.py:67
+msgid "English"
+msgstr "Anglaise"
+
+#: .\camersante\settings.py:68
+msgid "French"
+msgstr "Française"
+
+#: .\camersante\settings_back.py:68
 msgid "FR"
 msgstr "FR"
 
-#: .\camersante\settings.py:69 .\camersante\settings_back.py:69
+#: .\camersante\settings_back.py:69
 msgid "ENG"
 msgstr "ENG"
 
+#: .\camersante\urls.py:28
+msgid "^admin/"
+msgstr "admin"
+
+#: .\camersante\urls.py:30
+msgid "^"
+msgstr "^"
+
+#: .\jobs\urls.py:10
+msgid "about/"
+msgstr "a_propos"
+
+#: .\jobs\urls.py:11
+msgid "contact/"
+msgstr "contactez-nous/"
+
+#: .\jobs\urls.py:12
+msgid "services/"
+msgstr "services/"
+
 #: .\jobs\views.py:10
 msgid "My variable in English"
-msgstr ""
+msgstr "Mon show"
 
 #: .\templates\about.html:16 .\templates\base_layout.html:140
 msgid "À Propos"
 msgstr "About"
 
 #: .\templates\about.html:17
-msgid ""
-"Nous offrons un placement fiable aux agents de santé dans des hôpitaux "
-"réputés au Canada."
+msgid "Nous offrons un placement fiable aux agents de santé dans des hôpitaux réputés au Canada."
+
 msgstr "We provide reliable placement to health workers in reputable hospitals in Canada."
 
 #: .\templates\about.html:17
@@ -45,13 +73,11 @@ msgstr "Our services are superb!"
 
 #: .\templates\about.html:45
 msgid "Le placement du personnel de santé est ce que nous faisons."
-msgstr "Placement of health personnel is what we do."
+msgstr "Placement of health personnel in our partner organizations is what we do."
 
 #: .\templates\about.html:47
-msgid ""
-"Nous travaillons avec des partenaires pour fournir un emploi de qualité à "
-"nos clients."
-msgstr "We work with partners to provide quality employment to our clients"
+msgid "Nous travaillons avec des partenaires pour fournir un emploi de qualité à nos clients."
+msgstr "We work with partners to provide quality employment to our clients."
 
 #: .\templates\base_layout.html:65 .\templates\base_layout.html:139
 msgid "Accueil"
@@ -59,7 +85,7 @@ msgstr "Home"
 
 #: .\templates\base_layout.html:66
 msgid "A Propo"
-msgstr "About us"
+msgstr "About Us"
 
 #: .\templates\base_layout.html:67 .\templates\base_layout.html:141
 #: .\templates\services.html:16
@@ -87,29 +113,26 @@ msgstr "Contact"
 msgid "Contactez-nous"
 msgstr "Contact Us"
 
-#: .\templates\base_layout.html:161
+#: .\templates\base_layout.html:161 .\templates\base_layout.html:170
 msgid "Abonnez-vous"
 msgstr "Subscribe newsletter"
 
 #: .\templates\base_layout.html:167
 msgid "Votre email"
-msgstr "Enter your email"
-
-#: .\templates\base_layout.html:170
-msgid "Abonnez-vous"
-msgstr "Subscribe"
+msgstr "Enter your Email"
 
 #: .\templates\base_layout.html:179
 msgid "Avec nous, vous êtes assuré de travailler dans les meilleures conditions de travail."
+
 msgstr "With us, you are assured to work in the best working conditions."
 
 #: .\templates\base_layout.html:195
-msgid "Tous droits réservés| Par"  
-msgstr "All rights reserved |Developed by"
+msgid "Tous droits réservés | "
+msgstr "All Rights Reserved | "
 
 #: .\templates\contact.html:16
 msgid "contact"
-msgstr "contact"
+msgstr "Contact"
 
 #: .\templates\contact.html:17
 msgid "Contactez-nous en fournissant "
@@ -117,19 +140,19 @@ msgstr "Contact us by providing"
 
 #: .\templates\contact.html:17
 msgid "les informations nécessaires."
-msgstr "the needed information."
+msgstr "the required information."
 
 #: .\templates\contact.html:33
-msgid "Contactez-nous"
-msgstr "Get in Touch"
+msgid "Contactez-nous!"
+msgstr "Contact Us"
 
 #: .\templates\contact.html:45
 msgid "Votre nom"
-msgstr "Enter your name"
+msgstr "Enter Your Name"
 
 #: .\templates\contact.html:55
 msgid "Sujet"
-msgstr "Enter Subject"
+msgstr "Subject"
 
 #: .\templates\contact.html:60
 msgid "Envoyer"
@@ -137,16 +160,16 @@ msgstr "Send"
 
 #: .\templates\contact.html:76
 msgid "Lundi à vendredi 9:00h a 18hrs"
-msgstr "Mon to Fri, 9am to 6pm"
+msgstr "Mon to Fri, 9:00 am to 6:00 pm"
 
 #: .\templates\contact.html:83
 msgid "Envoyez-nous votre demande à tout moment!"
-msgstr "Contact us at anytime!"
+msgstr "We receive queries at any time!"
 
 #: .\templates\includes\about_law.html:10
 #, python-format
 msgid "100%% de satisfaction garantie."
-msgstr "100% Satisfaction guaranteed!"
+msgstr "100%% of Satisfaction is Guaranteed"
 
 #: .\templates\includes\about_law.html:12
 msgid "Nous visons le meilleur pour nos employés."
@@ -154,37 +177,35 @@ msgstr "We strive for the best for our clients."
 
 #: .\templates\includes\about_law.html:13
 msgid "Prendre rendez-vous"
-msgstr "Take an appointment"
+msgstr "Take an Appointment"
 
 #: .\templates\includes\services_partial.html:9
-msgid "Travaille avec nous,"
-
-msgstr "Work with us"
+msgid "Rejoignez-nous,"
+msgstr "Reach Out to Us,"
 
 #: .\templates\includes\services_partial.html:9
 msgid "Nous sommes les meilleurs"
-msgstr "We are simply the best!"
+msgstr "We are the Best."
 
 #: .\templates\includes\services_partial.html:10
 msgid "Juste un pas,"
 msgstr "Just one step,"
 
 #: .\templates\includes\services_partial.html:10
-msgid "Vous serez heureux d'avoir nous rejoint."
-msgstr "and you will be happy to have joined us!"
+msgid "Vous serez heureux d'avoir nous rejoint"
+msgstr "you will be happy you did it."
 
 #: .\templates\includes\services_partial.html:14
 msgid "Agir maintenant"
-msgstr "Act Now"
+msgstr "Action Now!"
 
 #: .\templates\includes\services_partial.html:30
 msgid "Priorité aux employés"
-msgstr "Prioritising our employees"
+msgstr "We prioritize out Clients."
 
 #: .\templates\includes\services_partial.html:31
-msgid ""
-"Nos partenaires comptent sur vous pour réussir. Assurer votre bien-être avec "
-"nos partenaires collaboratifs est notre priorité."
+msgid "Nos partenaires comptent sur vous pour réussir. Assurer votre bien-être avec nos partenaires collaboratifs est notre priorité."
+
 msgstr "Our partners count on us for the success of their organizations. Ensuring your well-being with our partners is our priority."
 
 #: .\templates\includes\services_partial.html:42
@@ -192,43 +213,38 @@ msgid "De Bons salaires"
 msgstr "Good Salaries"
 
 #: .\templates\includes\services_partial.html:43
-msgid ""
-"De bonnes rémunérations sont des conditions qui favorisent un bon travail. "
-"Nous les priorisons."
+msgid "De bonnes rémunérations sont des conditions qui favorisent un bon travail. Nous les priorisons."
+
 msgstr "Good remunerations are conditions neecessary for good work. Wr prioritize this."
 
 #: .\templates\includes\services_partial.html:54 .\templates\index.html:45
 msgid "Horaires flexibles"
-msgstr "Flexible working hours."
+msgstr "Flexible Schedules"
 
 #: .\templates\includes\services_partial.html:55
-msgid ""
-"Nous sommes conscients qu'en dehors du travail, les employés doivent gérer "
-"d'autres problèmes de la vie."
+msgid "Nous sommes conscients qu'en dehors du travail, les employés doivent gérer d'autres problèmes de la vie."
+
 msgstr "We are aware that out of regular work, you have other family issues to handle."
 
 #: .\templates\includes\teams.html:8
 msgid "Catégories d'emplois"
-msgstr "Work Categories"
+msgstr "Job Categories"
 
 #: .\templates\includes\teams.html:20
 msgid "Infirmier(ère)"
 msgstr "Registered Nurse"
 
 #: .\templates\includes\teams.html:21
-msgid ""
-"En tant qu'infirmière, travaillez dans des conditions favorables en nous "
-"rejoignant."
+msgid "En tant qu'infirmière, travaillez dans des conditions favorables en nous rejoignant."
 msgstr "Work under fafourable conditions with us as a nurse."
 
 #: .\templates\includes\teams.html:33
 msgid "Infirmiere Auxiliaires"
-msgstr ""
+msgstr "Licensed Practical nurses,"
 
 #: .\templates\includes\teams.html:34
-msgid ""
-"Travailler dans des hôpitaux qui ont une grande valeur pour les employés"
-msgstr "Work in our hopitals where gender balance is a current issu. "
+msgid "Travailler dans des hôpitaux qui ont une grande valeur pour les employés"
+msgstr "Work in our hopitals where gender balance is a current issue."
 
 #: .\templates\includes\teams.html:46 .\templates\includes\teams.html:76
 msgid "Preposee aux beneficiares"
@@ -236,16 +252,15 @@ msgstr "Health Support Workers"
 
 #: .\templates\includes\teams.html:47 .\templates\includes\teams.html:77
 msgid "Nous recrutons également des Preposee aux beneficiares."
-msgstr "As a Floor Aide, you would work with one of our partners who all have great reputation for handling employees"
+msgstr "As a Floor Aide, you would work with one of our partners who all have great reputation for handling employees."
 
 #: .\templates\includes\teams.html:62
 msgid "Inhalothérapeute"
 msgstr "Respiratory Therapist"
 
 #: .\templates\includes\teams.html:63
-msgid ""
-"Obtenez la satisfaction au travail tout en travaillant avec nous en tant que "
-"Inhalothérapeute"
+msgid  "Obtenez la satisfaction au travail tout en travaillant avec nous en tant que."
+ 
 msgstr "Obtain job satisfaction while working with us as a Respiratory Therapist."
 
 #: .\templates\includes\teams.html:89
@@ -253,38 +268,29 @@ msgid "Aides de services"
 msgstr "Floor Aides"
 
 #: .\templates\includes\teams.html:90
-msgid ""
-"En tant qu'aide de service, vous travailleriez avec l'un de nos partenaires "
-"qui ont tous une excellente réputation pour gérer les employés."
+msgid "En tant qu'aide de service, vous travailleriez avec l'un de nos partenaires qui ont tous une excellente réputation pour gérer les employés. "
+
 msgstr "As a Floor Aid, you would work with one of our partners whho have great reputation for managing their employees."
 
 #: .\templates\includes\testimonials.html:13
-msgid ""
-"J'étais heureux de la fluidité de mon processus de placement. En 3 mois, "
-"j'ai pu décrocher un emploi même si la durée était due à un retard de ma "
-"part, pour répondre aux exigences dans les délais. J'aime vos services."
-msgstr ""
-"I was amazed at how smooth my placement process went. In 3 months, "
-"I was to secure a job eventhough the duration was as a result of delayance on my part"
- "to fulfill requirements on time. I enjoyed your services."
+msgid "J'étais heureux de la fluidité de mon processus de placement. En 3 mois, j'ai pu décrocher un emploi même si la durée était due à un retard de ma part, pour répondre aux exigences dans les délais. J'aime vos services."
+ 
+msgstr "I was amazed at how smooth my placement process went. In 3 months, I was to secure a job eventhough the duration was as a result of delayance on my part to fulfill requirements on time. I enjoyed your services."
 
 #: .\templates\includes\testimonials.html:30
-msgid ""
-"J'ai apprécié la simplicité du processus d'embauche et les conseils que j'ai "
-"suivis. Je travaille de manière flexible et j'apprécie l'environnement de "
-"travail. Je vous remercie."
+msgid "J'ai apprécié la simplicité du processus d'embauche et les conseils que j'ai suivis. Je travaille de manière flexible et j'apprécie l'environnement de travail. Je vous remercie."
 msgstr "I really liked the clarity of the placement process and the pieces of advice I received. I have a flexible working schedule and I enjoy my working environment. Thank you."
 
 #: .\templates\index.html:23
 msgid "Bonnes conditions de travail"
-msgstr "Good Working conditions"
+msgstr "Good working conditions."
 
 #: .\templates\index.html:24
 msgid "Excellent personnel pour faciliter votre placement."
 msgstr "Coaching from our experts throughout placement process."
 
 #: .\templates\index.html:25 .\templates\index.html:47
-#: .\templates\index.html:69
+#: .\templates\index.html:68
 msgid "En Savior Plus"
 msgstr "Read More"
 
@@ -296,13 +302,18 @@ msgstr "Be a master of your work schedule and put in your best at work."
 msgid "Nos clients sont une priorité"
 msgstr "We attribute great value to ouur clients."
 
-#: .\templates\index.html:94
+#: .\templates\index.html:67
+msgid  "Vous travaillez mieux lorsque vous vous sentez aimé. Rejoignez-nous et travaillez dans un bon environnement."
+
+msgstr "Your best output comes when you work and feel loved. Join our team and work in a great environment."
+
+#: .\templates\index.html:93
 msgid "Notre distinction des autres"
-msgstr "How We Differ from Others"
+msgstr "How we are Different from Others"
 
 #: .\templates\index.html:98
 msgid "Des Bonus"
-msgstr "Work Bonuses"
+msgstr "Good Bonuses"
 
 #: .\templates\index.html:99
 msgid "Des Bons Salaires"
@@ -314,15 +325,15 @@ msgstr "Expert's Coaching"
 
 #: .\templates\index.html:101
 msgid "Horaires de travail flexibles"
-msgstr "Flexible Schedules"
+msgstr "Flexible Work Schedules"
 
 #: .\templates\index.html:102
 msgid "Conditions de travail favorables"
-msgstr "Very Favorable Working Conditions"
+msgstr "Favorable Working Conditons"
 
 #: .\templates\index.html:103
 msgid "Travailleurs à temps partiel et à temps plein"
-msgstr "Full-time & Part-time Placement"
+msgstr "Full-time and Part-time Offers."
 
 #: .\templates\services.html:17
 msgid "Presque là,"
@@ -330,4 +341,4 @@ msgstr "Almost there,"
 
 #: .\templates\services.html:17
 msgid "juste un petit effort de votre part!"
-msgstr "Make an effort on your part!"
+msgstr "just a little commitment on your part!"

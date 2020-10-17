@@ -7,8 +7,8 @@ from django.utils.translation import gettext_lazy as _
 
 urlpatterns = [
     path('',views.index,name='index'),
-    path('about/',views.about,name='about'),
-    path('contact/',views.contact,name='contact'),
-    path('services/',views.contact,name='services'),
+    path(_('about/'),views.about,name='about'),
+    path(_('contact/'),views.contact,name='contact'),
+    path(_('services/'),views.services,name='services'),
 ]
   #no need appending the settings here. it is enough in root dir

@@ -20,22 +20,16 @@ from django.conf.urls.static import static
 from django.utils.translation import gettext_lazy as _
 from django.conf.urls.i18n import i18n_patterns
 urlpatterns = [
-    re_path(r'^i18n/',include('django.conf.urls.i18n')),
-    re_path(r'^admin/', admin.site.urls),
+    path('i18n/',include('django.conf.urls.i18n')),
+    re_path( _(r'^admin/'), admin.site.urls),
     path('', include('jobs.urls')),
-    #path('about/',include('jobs.urls')),
-    #path('contact/',include('jobs.urls')),
-    re_path(r'^', include('jobs.urls')), 
-    #path('services/',include('jobs.urls')),
-]+ static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+    re_path(_(r'^'), include('jobs.urls')), 
+] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 
 #urlpatterns += i18n_patterns(
-#    path('admin/', admin.site.urls),
+#    re_path( _(r'^admin/'), admin.site.urls),
 #    path('', include('jobs.urls')),
-#    path('about/',include('jobs.urls')),
-#    path('contact/',include('jobs.urls')),
-#    path('jobs/', include('jobs.urls')), 
-#    path('set_language/', include('jobs.urls')),
-#    prefix_default_language =False,
-    
+#    re_path(_(r'^'), include('jobs.urls')), 
+#    prefix_default_language =True,
+#    
 #) + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

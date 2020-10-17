@@ -13,8 +13,8 @@ def about(request):
     return render(request, "about.html")
 def get_given_job(request,id): #find job with specific Id number
     job = Job.objects.get(id=id)
-def set_language(request):
-    pass
+def services(request):
+    return render(request, 'services.html')
 def news(request):
 	news_items = Video.objects.order_by('-created_at')[2:10]
 	latest_news=Video.objects.order_by('-created_at')[:2]

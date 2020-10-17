@@ -55,9 +55,8 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    #'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
-    
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -65,8 +64,8 @@ MIDDLEWARE = [
 ]
 
 LANGUAGES =[
-    ('fr',_('FR')),
-    ('en-us',_('ENG')),
+    ('en',_('English')),
+    ('fr',_('French')),
 ]
 
 ROOT_URLCONF = 'camersante.urls'
@@ -151,5 +150,4 @@ STATIC_ROOT = os.path.join(BASE_DIR,'assets')
 
 # FOR TRANSLATION
 LOCALE_PATHS = [
-    os.path.join(BASE_DIR, 'locale')
-]
+    os.path.join(BASE_DIR, 'locale')]
