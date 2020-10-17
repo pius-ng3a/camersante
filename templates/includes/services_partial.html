@@ -1,0 +1,63 @@
+{% load static i18n%}
+
+<section class="wantToWork-area section-bg3" data-background="{% static 'img/gallery/section_bg01.png' %}">
+    <div class="container">
+        <div class="wants-wrapper w-padding2">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-7 col-lg-9 col-md-8">
+                    <div class="wantToWork-caption wantToWork-caption2">
+                        <h2>{% trans "Rejoignez-nous," %} <br>{% trans "Nous sommes les meilleurs" %}</h2>
+                        <p>{% trans "Juste un pas," %}<br> {% trans "Vous serez heureux d'avoir nous rejoint" %}</p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4">
+                    <a href="/services" class="btn f-right sm-left">{% trans "Agir maintenant" %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--? Services Area Start -->
+<div class="service-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-cat text-center mb-50">
+                    <div class="cat-icon">
+                        <img src="{% static 'img/icon/services1.svg" alt="">
+                    </div>
+                    <div class="cat-cap">
+                        <h5><a href="services.html">{% trans "Priorité aux employés" %}</a></h5>
+                        <p>{% trans "Nos partenaires comptent sur vous pour réussir. Assurer votre bien-être avec nos partenaires collaboratifs est notre priorité."%}</p>
+                        <a href="/services" class="plus-btn"><i class="ti-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-cat text-center mb-50">
+                    <div class="cat-icon">
+                        <img src="{% static 'img/icon/services2.svg" alt="">
+                    </div>
+                    <div class="cat-cap">
+                        <h5><a href="services.html">{% trans "De Bons salaires" %}</a></h5>
+                        <p> {% trans "De bonnes rémunérations sont des conditions qui favorisent un bon travail. Nous les priorisons." %}</p>
+                        <a href="/services" class="plus-btn"><i class="ti-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-cat text-center mb-50">
+                    <div class="cat-icon">
+                        <img src="{% static 'img/icon/services3.svg" alt="">
+                    </div>
+                    <div class="cat-cap">
+                        <h5><a href="services.html">{% trans "Horaires flexibles" %}</a></h5>
+                        <p>{% trans "Nous sommes conscients qu'en dehors du travail, les employés doivent gérer d'autres problèmes de la vie." %}</p>
+                        <a href="services.html" class="plus-btn"><i class="ti-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services Area End -->

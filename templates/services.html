@@ -1,0 +1,48 @@
+{% extends "base_layout.html" %}
+{% load static  i18n  %}
+
+{% block content %}
+    <main>
+        <!--? Slider Area Start-->
+        <div class="slider-area slider-area2">
+            <div class="slider-active dot-style">
+                <!-- Slider Single -->
+                <div class="single-slider  d-flex align-items-center slider-height2">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-7 col-lg-8 col-md-10 ">
+                             <div class="hero-wrapper">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInUp" data-delay=".3s">{% trans "Services" %}</h1>
+                                    <p data-animation="fadeInUp" data-delay=".6s">{% trans "Presque là," %}<br> {% trans "juste un petit effort de votre part!" %}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!-- Slider Area End -->
+    {% include "includes/services_partial.html" %}
+    <!-- Services Area End -->
+    <!--? video_start -->
+    <div class="container pt-40">
+        <div class="video-area section-bg2 d-flex align-items-center"  data-background="{% static 'img/gallery/video-bg.png' %}">
+            <div class="video-wrap position-relative">
+                <div class="video-icon" >
+                    <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=9FrFKmMHlFM"><i class="fas fa-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video_end -->      
+    <!--? Testimonial Area Start -->
+    {% include "includes/testimonials.html" %}
+    <!--? Testimonial Area End -->
+    
+    <!--? About Law Start-->
+    {% include "includes/about_law.html" %}
+    <!-- About Law End-->
+</main>
+{% endblock %}
