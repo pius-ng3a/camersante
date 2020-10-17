@@ -16,6 +16,7 @@ import dj_database_url
 from django.utils.translation import gettext_lazy as _
 from django.core.wsgi import get_wsgi_application
 import dotenv
+import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -151,3 +152,14 @@ STATIC_ROOT = os.path.join(BASE_DIR,'assets')
 # FOR TRANSLATION
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale')]
+#added for heroku deployment
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+MEDIA_URL ='/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+django_heroku.settings(locals())
+# This is new
+options = DATABASES['default'].get('OPTIONS', {})
+options.pop('sslmode', None)
+#we clear the default database settings and direct the app to look for the settings pointed to by  dj_database_url
+# NICE BLOCK FOR THE SETTINGS: https://blog.usejournal.com/deploying-django-to-heroku-connecting-heroku-postgres-fcc960d290d1
