@@ -154,8 +154,8 @@ STATIC_ROOT = os.path.join(BASE_DIR,'assets')
 # FOR TRANSLATION
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale')]
-#added for heroku deployment
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#added for heroku deployment uncomment the line before deployment
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL ='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')

@@ -300,7 +300,7 @@ msgstr "Be a master of your work schedule and put in your best at work."
 
 #: .\templates\index.html:66
 msgid "Nos clients sont une priorité"
-msgstr "We attribute great value to ouur clients."
+msgstr "Our clients are our priority."
 
 #: .\templates\index.html:67
 msgid  "Vous travaillez mieux lorsque vous vous sentez aimé. Rejoignez-nous et travaillez dans un bon environnement."
