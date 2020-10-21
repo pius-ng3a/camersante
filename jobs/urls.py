@@ -10,5 +10,6 @@ urlpatterns = [
     path(_('about/'),views.about,name='about'),
     path(_('contact/'),views.contact,name='contact'),
     path(_('services/'),views.services,name='services'),
+    path(_('category/<int:catId>'),views.getJobByCategory,name='getJobByCategory'),
 ]
   #no need appending the settings here. it is enough in root dir

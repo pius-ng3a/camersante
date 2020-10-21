@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'jobs',
+    'categories',
 ]
 #application = get_wsgi_application()
 
@@ -165,3 +166,4 @@ options = DATABASES['default'].get('OPTIONS', {})
 options.pop('sslmode', None)
 #we clear the default database settings and direct the app to look for the settings pointed to by  dj_database_url
 # NICE BLOCK FOR THE SETTINGS: https://blog.usejournal.com/deploying-django-to-heroku-connecting-heroku-postgres-fcc960d290d1
+#camersante & camersante@2020

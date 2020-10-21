@@ -9,9 +9,9 @@ class JobAdmin(admin.ModelAdmin):
 	fieldsets=[
 	("Job Title ",{'fields':['title']}),
 	("Description ",{'fields':['descritption']}),
-	("Deadline ",{'fields':['deadline']}),
     ("Location",{'fields':['location']}),
     ("Deadline",{'fields':['deadline']}),
+	("Job Category",{'fields':['category_id']}),
 
 	 
 	]

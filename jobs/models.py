@@ -3,6 +3,7 @@ from time import time
 from django.urls import reverse
 from django.contrib.auth.models import User
 from django.forms import ModelForm
+from categories.models import Category
 # Create your models here.
 
 def get_upload_file_name(instance,filename): #function to rename files and give a unique name
@@ -13,7 +14,8 @@ def get_uploaded_image(instance,filename):
 class Job(models.Model):
     title=models.CharField(max_length=100)
     description=models.CharField(max_length=200)
-    location=models.CharField(max_length=100)
+    location=models.CharField(max_length=100,default="Quebec")
+    category_id = models.ForeignKey(Category, on_delete=models.CASCADE, default=1)
     user_id=models.ForeignKey(User,on_delete=models.CASCADE)
     deadline=models.DateField(null=False)
     created_at=models.DateField(blank=True,null=True,auto_now_add=True)
@@ -29,7 +31,7 @@ class NewsForm(ModelForm):
 	"""docstring for NewsForm"""
 	class Meta:
 		model = Job
-		fields = ['title','description','location','user_id','deadline'] # ,'icon' left out, user_id should be picked from auth_user
+		fields = ['title','description','location','user_id','deadline','category_id'] # ,'icon' left out, user_id should be picked from auth_user
 class AddNews(ModelForm):
 	"""docstring for AddNews"""
 	def __init__(self, arg):
