@@ -35,7 +35,7 @@ SECRET_KEY = 'gd3+h-59^_jh$bln&8e6nh81=tt+l)^*n%(f=3l(o-aoy)mw2m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #https://sheltered-falls-91447.herokuapp.com/ 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -165,7 +165,7 @@ django_heroku.settings(locals())
 options = DATABASES['default'].get('OPTIONS', {})
 options.pop('sslmode', None)
 #we clear the default database settings and direct the app to look for the settings pointed to by  dj_database_url
-# NICE BLOCK FOR THE SETTINGS: https://blog.usejournal.com/deploying-django-to-heroku-connecting-heroku-postgres-fcc960d290d1
+# NICE BLOCK FOR THE SETTINGS: 
 #camersante & camersante@2020
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
