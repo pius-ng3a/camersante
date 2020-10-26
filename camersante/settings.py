@@ -37,7 +37,7 @@ SECRET_KEY = 'gd3+h-59^_jh$bln&8e6nh81=tt+l)^*n%(f=3l(o-aoy)mw2m'
 #https://sheltered-falls-91447.herokuapp.com/ 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://guarded-lake-63625.herokuapp.com/']
 
 
 # Application definition
