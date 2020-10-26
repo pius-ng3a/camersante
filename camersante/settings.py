@@ -156,7 +156,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'assets')
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale')]
 #added for heroku deployment uncomment the line before deployment
-#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL ='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
@@ -167,3 +167,10 @@ options.pop('sslmode', None)
 #we clear the default database settings and direct the app to look for the settings pointed to by  dj_database_url
 # NICE BLOCK FOR THE SETTINGS: https://blog.usejournal.com/deploying-django-to-heroku-connecting-heroku-postgres-fcc960d290d1
 #camersante & camersante@2020
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'testing@example.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+EMAIL_PORT = 1025

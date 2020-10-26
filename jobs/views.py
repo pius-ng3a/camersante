@@ -1,10 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic import TemplateView
 from django.utils.translation import gettext_lazy as _
 from .models import Job
 from django.utils import translation
 from categories.models import Category
 from django.db.models import Q
+from django.core.mail import send_mail, BadHeaderError
 # Create your views here.
 def index(request):
     #example of code to indicate need translation
@@ -19,9 +20,26 @@ def services(request):
     return render(request, 'services.html')
 #get jobs of a given category
 def getJobByCategory(request,catId):
-	categoryJobs = Job.objects.filter(category_id=catId).order_by('-created_at').values() #include date now comparison.
-	otherJobs = Job.objects.filter(~Q(category_id=catId)).order_by('-created_at').values()[:20]
-	return render (request,'jobs.html',{'categoryJobs':categoryJobs,'otherJobs':otherJobs})
+	categoryJobs = Job.objects.filter(category_id=catId).order_by('-deadline').values() #include date now comparison.
+	otherJobs = Job.objects.filter(~Q(category_id=catId)).order_by('-deadline').values()[:20]
+	categoryCount = Job.objects.filter(category_id=catId).order_by('-deadline').count()
+	return render (request,'jobs.html',{'categoryJobs':categoryJobs,'otherJobs':otherJobs,'categoryCount':categoryCount})
+
+def sendEmail(request):
+	print ('Here we are!!')
+	if request.method == "POST":
+		sender = request.POST.get('email')
+		message = request.POST.get('message')
+		subject = request.POST.get('subject')
+		name = request.POST.get('name ')
+		message = str(message)  + "  By  : "  + str (name)
+		try:
+			send_mail(subject, message, sender,['stylofyz2006@yahoo.com'])
+		except BadHeaderError:
+			return redirect({'failure_t': 'Erreur! Essayez plus tard!'})
+		return redirect({'success_t':'Merci! Message envoye!!'})
+#def contact_success(request):
+
 
 def news(request):
 	news_items = Video.objects.order_by('-created_at')[2:10]

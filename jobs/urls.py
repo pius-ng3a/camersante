@@ -11,5 +11,6 @@ urlpatterns = [
     path(_('contact/'),views.contact,name='contact'),
     path(_('services/'),views.services,name='services'),
     path(_('category/<int:catId>'),views.getJobByCategory,name='getJobByCategory'),
+    path(_('msg/atonous'), views.sendEmail,name='sendMail'),
 ]
   #no need appending the settings here. it is enough in root dir

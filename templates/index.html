@@ -1,4 +1,4 @@
-{% extends "base_layout.html" %}
+{% extends "base_layout_head.html" %}
 {% load static  i18n  %}
 
 {% block content %}
@@ -194,7 +194,8 @@
                         <h2 style="color: green;"> {% trans "Votre Message" %} 
                          </h2>
                     </div>
-                    <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                    <form class="form-contact contact_form" action='msg/atonous' method="POST" id="contactForm1" novalidate="novalidate">
+                        {% csrf_token %}
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
@@ -217,18 +218,24 @@
                                 </div>
                             </div>
                            <div class="form-group mt-3 col-sm-6">
-                                <button id="showSend" type="submit" class="button button-contactForm boxed-btn">{% trans "Envoyer" %}</button>
+                                <button id="showSend1" type="submit" class="button button-contactForm boxed-btn">{% trans "Envoyer" %}</button>
                            </div> 
-                           <!--div class="col-sm-6" style="display: none;" id="msgSent">
-                              <p style="padding-top: 10%; color: green;"> {% trans "Message envoyé" %} </p>
-                           </div --> 
+                            {% if success_t %}
+                                <div class="col-sm-6" style="display: none;" id="msgSent">
+                                    <p style="padding-top: 10%; color: green;"> {% trans "Message envoyé!" %} </p>
+                                </div >
+                            {% elif failure_t %}
+                                <div class="col-sm-6" style="display: none;" id="msgSent">
+                                    <p style="padding-top: 10%; color:red;"> {% trans "Erreur, Essayez plus tard." %} </p>
+                                </div >
+                           {% endif %}
                            
                         </div>
-                        <div id="success" class="modal">
+                        <div id="success#" class="modal">
                                 <p> {% trans "Merci de nous contacter." %}</p>
                                 <a href="#" rel="modal:close">X</a>
                         </div>
-                        <div id="error" class="modal">
+                        <div id="error#" class="modal">
                              <p> {% trans "Erreur! Veuillez réessayer." %}</p>
                                 <a href="#" rel="modal:close">X</a>
                         </div>
@@ -241,14 +248,14 @@
  </div>
 </div>
 <!-- About-2 Area End -->
-<!--? Blog Area Start -->
-{% include "includes/teams.html" %}
+<!--  Blog Area Start -->
+<!--   include "includes/teams.html"   -->  
 <!-- Blog Area End -->
 {% include "includes/services_partial.html" %}
 <!--? Testimonial Area Start -->
 {% include "includes/testimonials.html" %}  
 <!--? Testimonial Area End -->
-<!--? video_start -->
+<!--? video_start 
 <div class="container">
     <div class="video-area section-bg2 d-flex align-items-center"  data-background="{% static 'img/gallery/video-bg.png' %}">
         <div class="video-wrap position-relative">
@@ -257,8 +264,9 @@
             </div>
         </div>
     </div>
-</div>
-<!-- video_end -->      
+</div> -->
+<!-- video_end -->  
+
 
 <!--? About Law Start-->
 {% include "includes/about_law.html" %}

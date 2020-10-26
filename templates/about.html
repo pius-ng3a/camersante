@@ -24,8 +24,8 @@
         </div>
     </div>
     <!-- Slider Area End -->
-    <!--? Team Area Start-->
-    {% include "includes/teams.html" %}
+    <!--? Team Area Start
+      include "includes/teams.html"   -->
     <!--? Team End-->
     <!-- Services End-->
     <!--? About-2 Area Start -->
@@ -45,7 +45,7 @@
                             <h2> {% trans "Le placement du personnel de santé est ce que nous faisons." %}</h2>
                         </div>
                         <p class="pera-top mb-40">{% trans "Nous travaillons avec des partenaires pour fournir un emploi de qualité à nos clients." %}</p>
-                        <p class="pera-bottom mb-30">{% trans "Nos services sont exceptionnels avec des stages allant de quelques jours à quelques semaines. Nous comptons beaucoup sur votre collaboration pour un processus rapide. Nos conditions sont très flexibles et faciles à respecter. Nous serions heureux de vous accueillir bientôt!"
+                        <p class="pera-bottom mb-30">  {% trans "Nos services sont exceptionnels avec des stages allant de quelques jours à quelques semaines. Nous comptons beaucoup sur votre collaboration pour un processus rapide. Nos conditions sont très flexibles et faciles à respecter. Nous serions heureux de vous accueillir bientôt!" %}
                         </p>
                         <div class="icon-about">
                          <img src="{% static 'img/icon/about1.svg' %} " alt="" class=" mr-20">
@@ -59,7 +59,7 @@
  <!--? Testimonial Area Start -->
  {% include "includes/testimonials.html" %}
 <!--? Testimonial Area End -->
-<!--? video_start -->
+<!--? video_start 
 <div class="container">
     <div class="video-area section-bg2 d-flex align-items-center"  data-background="{% static 'img/gallery/video-bg.png' %}">
         <div class="video-wrap position-relative">
@@ -68,11 +68,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- video_end -->      
  
 <!--? About Law Start-->
 {% include "includes/about_law.html" %}
 <!-- About Law End-->
 </main>
-{% endblock%}
+{% endblock %}

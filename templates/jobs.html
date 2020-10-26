@@ -4,13 +4,15 @@
 {% block content %}
  
 <!-- Specific category goes here-->
-
-<section class="home-blog-area section-padding30">
+<hr/> 
+  {% if categoryCount > 0 %}
+  
+    <section class="home-blog-area" style="padding-top: 2%;">
     <div class="container">
         <div class="row">
-            {% for job in categoryJobs %}
+                {% for job in categoryJobs %}
 
-            <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6">
                 <div class="home-blog-single mb-40">
                     <div class="blog-img-cap">
                         <div class="blog-cap">
@@ -18,21 +20,27 @@
                             <P><span> {% trans "delais : " %} </span>{{job.deadline}}</p>
                             <p>{{job.location}}</p>
                             <p>{{  job.description  }}</p>
+                            <p style="float: center; color: green;"><a href="{% url 'index' %}" class="btn header-btn">{% trans 'Contact' %}</a></p>
 
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
 
-            {% endfor %}
+                {% endfor %}
+            
     </div>
-</section>
-
+    </section>
+{% else %}
+ <p style="text-align: center; color: rgb(235, 139, 14);"> {% trans "Emploi indisponible momentarement pour cet categorie" %}</p>
+{% endif %}
 <!-- Specific category ends-->
 
-<hr/>
+<hr/> 
+<h1 style="color: green; text-align: center;">  {% trans "Autre Emploi disponible" %}</h1> <br/>
 <section class="home-blog-area section-padding30">
     <div class="container">
+        
         <div class="row">
             {% for other in otherJobs %}
 
@@ -44,6 +52,7 @@
                             <P><span> {% trans "delais : " %} </span>{{other.deadline}}</p>
                             <p>{{other.location}}</p>
                             <p>{{  other.description  }}</p>
+                            <p style="float: center; color: green;"><a href="{% url 'index' %}" class="btn header-btn">{% trans 'Contact' %}</a></p>
 
                         </div>
                     </div>
