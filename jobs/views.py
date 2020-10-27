@@ -6,6 +6,7 @@ from django.utils import translation
 from categories.models import Category
 from django.db.models import Q
 from django.core.mail import send_mail, BadHeaderError
+from django.conf import settings
 # Create your views here.
 def index(request):
     #example of code to indicate need translation
@@ -29,12 +30,17 @@ def sendEmail(request):
 	print ('Here we are!!')
 	if request.method == "POST":
 		sender = request.POST.get('email')
+		acknowledgment = settings.EMAIL_HOST_USER
 		message = request.POST.get('message')
 		subject = request.POST.get('subject')
 		name = request.POST.get('name ')
 		message = str(message)  + "  By  : "  + str (name)
 		try:
 			send_mail(subject, message, sender,['stylofyz2006@yahoo.com'])
+		except BadHeaderError:
+			return redirect({'failure_t': 'Erreur! Essayez plus tard!'})
+		try:
+			send_mail("Message recu par CamerSante","Merci pour votre interet dans nos service. Nous vous contacte avec le delais",acknowledgment,[sender,])
 		except BadHeaderError:
 			return redirect({'failure_t': 'Erreur! Essayez plus tard!'})
 		return redirect({'success_t':'Merci! Message envoye!!'})
