@@ -7,6 +7,8 @@ from categories.models import Category
 from django.db.models import Q
 from django.core.mail import send_mail, BadHeaderError
 from django.conf import settings
+import socket
+socket.getaddrinfo('localhost', 8080)
 # Create your views here.
 def index(request):
     #example of code to indicate need translation
