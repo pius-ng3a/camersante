@@ -31,7 +31,7 @@ if os.path.isfile(dotenv_file):
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'gd3+h-59^_jh$bln&8e6nh81=tt+l)^*n%(f=3l(o-aoy)mw2m'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #https://sheltered-falls-91447.herokuapp.com/ 
@@ -175,3 +175,5 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'takurelindis15@gmail.com'
 EMAIL_HOST_PASSWORD = 'relindis15'
+
+# deploy video https://www.youtube.com/watch?v=dJWVL15Jpws

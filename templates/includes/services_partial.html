@@ -11,7 +11,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4">
-                    <a href="/services" class="btn f-right sm-left">{% trans "Agir maintenant" %}</a>
+                    <a href="{% url 'index' %}" class="btn f-right sm-left">{% trans "Agir maintenant" %}</a>
                 </div>
             </div>
         </div>
@@ -27,8 +27,16 @@
                         <img src="{% static 'img/icon/services1.svg" alt="">
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">{% trans "Priorité aux employés" %}</a></h5>
-                        <p>{% trans "Nos partenaires comptent sur vous pour réussir. Assurer votre bien-être avec nos partenaires collaboratifs est notre priorité."%}</p>
+                        <h5><a href="services.html">{% trans "Pourquoi faire confiance Groupe Camer Santé?" %}</a></h5>
+                        <!-- p style="text-align: left;">{% trans "Nous offrons un service de placement temporaire ou à long terme qui répond à tout vos besoins:" %} </p -->
+                            
+                         <p style="text-align: left;"> &#8226; {% trans "Agence sérieuse et déterminée" %}</p>
+                         <p style="text-align: left; margin-top: -10%;"> &#8226; {% trans "Flexibilité d’horaire" %} </p>
+                         <p style="text-align: left; margin-top: -10%;"> &#8226;{% trans "Employés professionnels et empathiques" %} </p>
+                         <p style="text-align: left;margin-top: -10%;"> &#8226; {% trans "Agence présente à travers le Québec" %} </p>
+                         <p style="text-align: left;margin-top: -10%;"> &#8226; {% trans "Service de placement temporaire ou à long terme" %}</p>
+                         <p style="text-align: left;margin-top: -10%;"> &#8226; {% trans "Plusieurs avantages de travailler en région éloignée, possibilité de faire beaucoup de temps supplémentaires selon vos capacités."%}</p>
+                             
                         <a href="/services" class="plus-btn"><i class="ti-plus"></i></a>
                     </div>
                 </div>
@@ -39,8 +47,14 @@
                         <img src="{% static 'img/icon/services2.svg" alt="">
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">{% trans "De Bons salaires" %}</a></h5>
-                        <p> {% trans "De bonnes rémunérations sont des conditions qui favorisent un bon travail. Nous les priorisons." %}</p>
+                        <h5><a href="services.html">{% trans "Des Salaires Avantageux" %}</a></h5>
+                        <p style="text-align: left;"> {% trans "Avec des salaires avantageux de Vaisseau Santé, vous pouvez en obtenir plus pour le même travail. Nos employés à temps complet peuvent bénéficier d’une gamme complète de bénéfices non imposables.De plus, le kilométrage ainsi que les frais de subsistance (Per-diem) sont aussi offerts dans plusieurs régions. Informez-vous auprès de nous!" %}
+                            </p>
+                            
+                            
+                            
+                            
+                            
                         <a href="/services" class="plus-btn"><i class="ti-plus"></i></a>
                     </div>
                 </div>
@@ -51,8 +65,8 @@
                         <img src="{% static 'img/icon/services3.svg" alt="">
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">{% trans "Horaires flexibles" %}</a></h5>
-                        <p>{% trans "Nous sommes conscients qu'en dehors du travail, les employés doivent gérer d'autres problèmes de la vie." %}</p>
+                        <h5><a href="services.html">{% trans "Horaires flexible" %}</a></h5>
+                        <p style="text-align: left;">{% trans " Groupe Camer Santé accommode sans aucun doute avec un horaire sur mesure, priorise la conciliation travail-famille loin de tout stress. Faites votre propre horaire pour profiter de votre temps libre avec ce qui compte pour vous. Tout cela en ayant plus d'argents dans vos poches, parce que tout simplement vous n'êtes pas imposé sur vos allocations (Per-diem) et vos frais de déplacement." %}</p>
                         <a href="services.html" class="plus-btn"><i class="ti-plus"></i></a>
                     </div>
                 </div>
